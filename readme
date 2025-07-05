@@ -1,0 +1,4 @@
+To open source this project the a new api token has to be generated and the old one has to be removed from the project due to its expiration.
+Unless the api isnt removed and the new ones added the website wont generate proper response.
+To generate the new api related account visit : https://plagiarismcheck.org/pricing/?ai=
+After the account creation visit for API TOKEN : https://plagiarismcheck.org/for-developers/
