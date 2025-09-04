@@ -1,4 +1,133 @@
-To open source this project the a new api token has to be generated and the old one has to be removed from the project due to its expiration.
-Unless the api isnt removed and the new ones added the website wont generate proper response.
-To generate the new api related account visit : https://plagiarismcheck.org/pricing/?ai=
-After the account creation visit for API TOKEN : https://plagiarismcheck.org/for-developers/
+📚 CYBERTETRA – MERN Cybersecurity Learning Platform
+📖 Overview
+CYBERTETRA is a full-stack MERN application designed to be a comprehensive online learning platform focused on cybersecurity education. It allows students to explore, enroll in, and learn from courses, while providing administrators with a robust system to manage courses, student data, and transactions.
+
+👉 This project is developed to provide a secure and intuitive platform for aspiring cybersecurity professionals.
+
+✨ Features
+👤 Student Features (Frontend)
+🔍 Course Discovery: Browse a catalog of cybersecurity courses with filtering options based on topic, difficulty level, and ratings.
+
+📚 Course Details: View detailed course pages with syllabi, video previews, instructor profiles, and student reviews.
+
+💳 Seamless Enrollment: An end-to-end enrollment process with secure payment integration via Razorpay.
+
+🚀 Personalized Dashboard: A dedicated student dashboard to track enrolled courses, view progress, and manage profile information.
+
+⭐ Reviews & Ratings: Students can rate and review courses to help the community.
+
+🛠️ Admin Features (Backend)
+🔑 Secure Admin Login: Access the admin dashboard with a secure, role-based login.
+
+📊 Dashboard Analytics: Gain insights into key metrics such as student enrollment, revenue, and popular courses.
+
+👨‍🏫 Course Management: A powerful CMS for admins to add new courses, update content, manage video lessons, and organize course categories.
+
+🎓 Student Management: View and manage a list of all enrolled students, their course progress, and enrollment history.
+
+💰 Transaction History: Track all payment transactions and manage refunds.
+
+📝 Content Moderation: Moderate student reviews and manage static pages like About Us, FAQ, and Privacy Policy.
+
+🛠️ Tech Stack
+Layer
+
+Technology
+
+Frontend
+
+
+
+Backend
+
+
+
+Database
+
+(Atlas)
+
+Auth
+
++
+
+Payments
+
+
+
+📂 Folder Structure
+The project follows a standard MERN stack structure, separating the client and server codebases for modularity and scalability.
+
+cybertetra/
+│
+├── client/          # React (Vite) frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/       # Different website pages
+│   │   ├── services/    # API calls and external services
+│   │   └── App.jsx
+│   └── .env
+│
+└── server/          # Node.js + Express backend
+    ├── controllers/ # Logic for handling requests
+    ├── middleware/  # Auth middleware, etc.
+    ├── models/      # MongoDB schemas
+    ├── routes/      # API endpoints
+    ├── server.js    # Entry point
+    └── .env
+
+🚀 Getting Started
+Prerequisites
+Node.js (v14.x or later)
+
+MongoDB (local or cloud-based like Atlas)
+
+npm or yarn
+
+A Razorpay account for payment gateway integration
+
+Installation
+Clone the repository:
+
+git clone [https://github.com/your-username/cybertetra.git](https://github.com/your-username/cybertetra.git)
+cd cybertetra
+
+Set up the backend:
+
+cd server
+npm install
+
+Create a .env file in the server/ directory with your environment variables:
+
+MONGO_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret_key
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+
+Set up the frontend:
+
+cd ../client
+npm install
+
+Create a .env file in the client/ directory with your environment variables:
+
+VITE_SERVER_URL=http://localhost:5000/api
+
+Running the application
+Start the backend server:
+
+cd server
+npm start
+
+Start the frontend development server:
+
+cd ../client
+npm run dev
+
+The application will now be live. The frontend will be accessible at http://localhost:5173 (or the default port for Vite), and the backend API will be running on http://localhost:5000.
+
+🤝 Contributing
+We welcome contributions to CYBERTETRA! Please read our CONTRIBUTING.md file for detailed guidelines on how to contribute.
+
+📄 License
+This project is licensed under the MIT Lic
